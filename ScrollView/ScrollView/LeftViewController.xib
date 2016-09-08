@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftViewController" customModule="ScrollView" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="2NI-P7-Du5" id="yic-tM-7eg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="51" translatesAutoresizingMaskIntoConstraints="NO" id="2NI-P7-Du5">
+                    <rect key="frame" x="0.0" y="0.0" width="605" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2NI-P7-Du5" secondAttribute="bottom" id="B1c-CH-S4H"/>
+                <constraint firstItem="2NI-P7-Du5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TVB-mT-JhS"/>
+                <constraint firstItem="2NI-P7-Du5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZLO-Vc-m1f"/>
+                <constraint firstAttribute="trailing" secondItem="2NI-P7-Du5" secondAttribute="trailing" constant="-5" id="oTA-V2-mBi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="51" width="960" height="600"/>
+    </resources>
+</document>
