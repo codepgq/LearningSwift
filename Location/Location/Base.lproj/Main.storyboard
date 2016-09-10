@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c1" translatesAutoresizingMaskIntoConstraints="NO" id="xva-xU-hi5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFF-1m-XC5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qn9-uY-Fh3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pko-ib-7Fw">
+                                            <rect key="frame" x="175" y="30" width="250" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="250" id="60e-2f-vaH"/>
+                                                <constraint firstAttribute="height" constant="70" id="Sg5-K5-Mf4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7O-XO-eAr" customClass="DIYButton" customModule="Location" customModuleProvider="target">
+                                            <rect key="frame" x="200" y="532" width="200" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="9MT-4r-sv2"/>
+                                                <constraint firstAttribute="width" constant="200" id="qRt-Uo-80U"/>
+                                            </constraints>
+                                            <state key="normal" title="点我开始定位" image="Find my location"/>
+                                            <connections>
+                                                <action selector="getLocationCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHB-OU-Dqr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pko-ib-7Fw" firstAttribute="top" secondItem="Qn9-uY-Fh3" secondAttribute="top" constant="30" id="3Rx-5j-CLB"/>
+                                        <constraint firstItem="R7O-XO-eAr" firstAttribute="centerX" secondItem="Qn9-uY-Fh3" secondAttribute="centerX" id="VMV-TD-8ng"/>
+                                        <constraint firstItem="pko-ib-7Fw" firstAttribute="centerX" secondItem="Qn9-uY-Fh3" secondAttribute="centerX" id="ZLN-YG-QbC"/>
+                                        <constraint firstAttribute="bottom" secondItem="R7O-XO-eAr" secondAttribute="bottom" constant="8" id="lXa-WV-PRH"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WFF-1m-XC5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Jjw-oy-1wM"/>
+                            <constraint firstItem="xva-xU-hi5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="QIY-Ce-c9I"/>
+                            <constraint firstItem="WFF-1m-XC5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="RRt-5Z-4p3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WFF-1m-XC5" secondAttribute="trailing" constant="-20" id="RWB-px-WgD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WFF-1m-XC5" secondAttribute="bottom" id="W5q-Wr-UxJ"/>
+                            <constraint firstItem="xva-xU-hi5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="bPX-0I-h45"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xva-xU-hi5" secondAttribute="trailing" constant="-20" id="j0N-El-eLv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xva-xU-hi5" secondAttribute="bottom" id="ysk-WH-01d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="address" destination="pko-ib-7Fw" id="eTq-rm-7AB"/>
+                        <outlet property="backgroundImage" destination="xva-xU-hi5" id="dLQ-rG-p1T"/>
+                        <outlet property="effectView" destination="Qn9-uY-Fh3" id="5wN-ad-GyJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Find my location" width="326" height="78"/>
+        <image name="c1" width="700" height="1244"/>
+    </resources>
+</document>
