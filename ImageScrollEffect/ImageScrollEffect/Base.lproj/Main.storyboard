@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageScrollEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="YfE-KL-wb0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNq-Yg-UA2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oDb-77-dD6">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFG-ey-odd">
+                                            <rect key="frame" x="0.0" y="150" width="600" height="300"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="300" id="kNM-HO-dna"/>
+                                            </constraints>
+                                        </scrollView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="oFG-ey-odd" firstAttribute="leading" secondItem="oDb-77-dD6" secondAttribute="leading" id="4Kc-me-OkO"/>
+                                        <constraint firstItem="oFG-ey-odd" firstAttribute="centerY" secondItem="oDb-77-dD6" secondAttribute="centerY" id="Ra5-fR-Hcv"/>
+                                        <constraint firstAttribute="trailing" secondItem="oFG-ey-odd" secondAttribute="trailing" id="efg-yf-X5L"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vNq-Yg-UA2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="AdN-jE-8Xm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vNq-Yg-UA2" secondAttribute="trailing" constant="-20" id="BX4-7S-ls8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vNq-Yg-UA2" secondAttribute="bottom" id="DVc-La-vnN"/>
+                            <constraint firstItem="vNq-Yg-UA2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="SuH-6a-dF9"/>
+                            <constraint firstItem="YfE-KL-wb0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XCz-UE-71n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YfE-KL-wb0" secondAttribute="trailing" constant="-20" id="hW3-sw-Nqb"/>
+                            <constraint firstItem="YfE-KL-wb0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="izO-W7-Gj0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YfE-KL-wb0" secondAttribute="bottom" id="p2V-f1-KgZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="oFG-ey-odd" id="J6k-Mw-2el"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="480" height="853"/>
+    </resources>
+</document>
