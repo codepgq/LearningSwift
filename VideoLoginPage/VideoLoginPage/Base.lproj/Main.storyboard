@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoLoginPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-be-jPO">
+                                <rect key="frame" x="40" y="480" width="520" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.73733357440000002" blue="0.14919725580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pod-90-6WG">
+                                <rect key="frame" x="40" y="540" width="520" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ryx-J4-CPC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="0.73733357440000002" blue="0.14919725580000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="wxs-PB-CPB">
+                                <rect key="frame" x="191" y="61" width="218" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="dUV-Gv-RfJ"/>
+                                    <constraint firstAttribute="height" constant="66" id="xfo-Yj-Xhx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mx7-be-jPO" firstAttribute="centerX" secondItem="Pod-90-6WG" secondAttribute="centerX" id="3X2-Jt-mtv"/>
+                            <constraint firstItem="Mx7-be-jPO" firstAttribute="height" secondItem="Pod-90-6WG" secondAttribute="height" id="BNq-qB-UGZ"/>
+                            <constraint firstItem="wxs-PB-CPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K2D-vp-ceA"/>
+                            <constraint firstItem="Pod-90-6WG" firstAttribute="top" secondItem="Mx7-be-jPO" secondAttribute="bottom" constant="20" id="PLr-gz-5Kq"/>
+                            <constraint firstItem="Mx7-be-jPO" firstAttribute="width" secondItem="Pod-90-6WG" secondAttribute="width" id="h1g-84-p6p"/>
+                            <constraint firstItem="wxs-PB-CPB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="jnu-T2-Itc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pod-90-6WG" secondAttribute="trailing" constant="20" id="lmq-oB-Ha2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pod-90-6WG" secondAttribute="bottom" constant="20" id="nLu-vM-Soa"/>
+                            <constraint firstItem="Pod-90-6WG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="sEK-mf-iUf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="Mx7-be-jPO" id="fXc-PM-xI3"/>
+                        <outlet property="registerBtn" destination="Pod-90-6WG" id="8KH-Mf-lOa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
