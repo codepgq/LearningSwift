@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7fb-9x-uqg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--改变字体-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day_02tableView改变字体" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V5f-hV-a6v">
+                                <rect key="frame" x="0.0" y="64" width="600" height="436"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5A5-gL-fiU">
+                                <rect key="frame" x="250" y="500" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.84254951721728011" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hhH-Ta-7b0"/>
+                                    <constraint firstAttribute="width" constant="100" id="tQa-9L-SGC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <state key="normal" title="change font"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVG-Jn-eMe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V5f-hV-a6v" secondAttribute="bottom" constant="100" id="10l-vs-50o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V5f-hV-a6v" secondAttribute="trailing" constant="-20" id="6Ec-Lc-kLl"/>
+                            <constraint firstItem="5A5-gL-fiU" firstAttribute="top" secondItem="V5f-hV-a6v" secondAttribute="bottom" id="FZz-TW-QGe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5A5-gL-fiU" secondAttribute="bottom" id="K7Y-Ij-0Q9"/>
+                            <constraint firstItem="V5f-hV-a6v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Oyu-tw-Xm2"/>
+                            <constraint firstItem="V5f-hV-a6v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="P3W-pP-LUO"/>
+                            <constraint firstItem="5A5-gL-fiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vws-cB-uqe"/>
+                            <constraint firstItem="5A5-gL-fiU" firstAttribute="top" secondItem="V5f-hV-a6v" secondAttribute="bottom" id="cCo-xj-p7o"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="10l-vs-50o"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="改变字体" id="bsY-4y-VOd"/>
+                    <connections>
+                        <outlet property="changeBtn" destination="5A5-gL-fiU" id="ySk-f4-V8c"/>
+                        <outlet property="tableView" destination="V5f-hV-a6v" id="iSE-gn-cls"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="353"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LpR-Xd-4g1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7fb-9x-uqg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C46-qQ-oXP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0cH-0H-Cmb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NcV-qj-k5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="984"/>
+        </scene>
+    </scenes>
+</document>
