@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a啊" translatesAutoresizingMaskIntoConstraints="NO" id="zMk-LP-ITZ">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rub-NE-1jG">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="W0D-JH-OQv">
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Yx-FB-in5">
+                                <rect key="frame" x="28" y="226" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXS-W0-peD">
+                                <rect key="frame" x="36" y="486" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.95322716247019557" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="startBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8O-Zi-vNr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SE6-mF-xTk">
+                                <rect key="frame" x="36" y="575" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IXS-W0-peD" firstAttribute="top" secondItem="3Yx-FB-in5" secondAttribute="bottom" constant="44" id="1Sb-YX-Vcs"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zMk-LP-ITZ" secondAttribute="bottom" id="5Hb-ro-Mfe"/>
+                            <constraint firstItem="rub-NE-1jG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="6pI-Ib-tMy"/>
+                            <constraint firstItem="zMk-LP-ITZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="AAP-pr-5yb"/>
+                            <constraint firstItem="SE6-mF-xTk" firstAttribute="top" secondItem="IXS-W0-peD" secondAttribute="bottom" constant="39" id="DHU-QL-9Xg"/>
+                            <constraint firstItem="3Yx-FB-in5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GuJ-vK-BZX"/>
+                            <constraint firstItem="IXS-W0-peD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="Hhk-Nz-p7s"/>
+                            <constraint firstItem="SE6-mF-xTk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="IQv-mv-WO9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rub-NE-1jG" secondAttribute="trailing" constant="-20" id="LeF-Ux-MKZ"/>
+                            <constraint firstItem="rub-NE-1jG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="QYc-Gr-upl"/>
+                            <constraint firstItem="zMk-LP-ITZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Xe6-nR-oYP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zMk-LP-ITZ" secondAttribute="trailing" constant="-20" id="aYm-Qo-egn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SE6-mF-xTk" secondAttribute="trailing" constant="20" id="aaZ-Tb-IV7"/>
+                            <constraint firstItem="SE6-mF-xTk" firstAttribute="top" secondItem="IXS-W0-peD" secondAttribute="bottom" constant="39" id="bzc-LS-fu3"/>
+                            <constraint firstItem="3Yx-FB-in5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cSz-ZV-mL1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SE6-mF-xTk" secondAttribute="bottom" constant="71" id="gJa-lm-S6X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rub-NE-1jG" secondAttribute="bottom" id="gPL-DI-23a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IXS-W0-peD" secondAttribute="trailing" constant="16" id="tuU-n0-DEO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="SE6-mF-xTk" id="Tme-Yu-fQ6"/>
+                        <outlet property="pickerView" destination="3Yx-FB-in5" id="bm3-3K-8SU"/>
+                        <outlet property="startBtn" destination="IXS-W0-peD" id="xpn-5C-K94"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a啊" width="960" height="1707"/>
+    </resources>
+</document>
