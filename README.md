@@ -10,3 +10,6 @@
 10、VideoLoginPage<br />
 11、CellBackgroundColor<br />
 12、ButtonAnimation<br />
+13、TableViewCellAnimation<br />
+14、PickerView<br />
+15、ImageViewMask<br />
