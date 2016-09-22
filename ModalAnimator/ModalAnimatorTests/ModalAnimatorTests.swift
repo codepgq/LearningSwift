@@ -1,15 +1,15 @@
 //
-//  ImageViewMaskTests.swift
-//  ImageViewMaskTests
+//  ModalAnimatorTests.swift
+//  ModalAnimatorTests
 //
-//  Created by ios on 16/9/21.
+//  Created by ios on 16/9/22.
 //  Copyright © 2016年 ios. All rights reserved.
 //
 
 import XCTest
-@testable import ImageViewMask
+@testable import ModalAnimator
 
-class ImageViewMaskTests: XCTestCase {
+class ModalAnimatorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

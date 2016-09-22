@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81AED5161D9368E8002545E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED5151D9368E8002545E2 /* AppDelegate.swift */; };
+		81AED5181D9368E8002545E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED5171D9368E8002545E2 /* ViewController.swift */; };
+		81AED51D1D9368E8002545E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AED51C1D9368E8002545E2 /* Assets.xcassets */; };
+		81AED5201D9368E8002545E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AED51E1D9368E8002545E2 /* LaunchScreen.storyboard */; };
+		81AED52B1D9368E8002545E2 /* ModalAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED52A1D9368E8002545E2 /* ModalAnimatorTests.swift */; };
+		81AED5361D9368E8002545E2 /* ModalAnimatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED5351D9368E8002545E2 /* ModalAnimatorUITests.swift */; };
+		81AED5441D936F18002545E2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED5431D936F18002545E2 /* MainTableViewCell.swift */; };
+		81AED5461D937383002545E2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED5451D937383002545E2 /* MenuTableViewController.swift */; };
+		81AED5481D93739D002545E2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED5471D93739D002545E2 /* MenuTableViewCell.swift */; };
+		81AED54A1D9373B4002545E2 /* MenuShowAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AED5491D9373B4002545E2 /* MenuShowAnimator.swift */; };
+		81AED54F1D93B0B0002545E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AED54D1D93B0B0002545E2 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81AED5271D9368E8002545E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AED50A1D9368E8002545E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81AED5111D9368E8002545E2;
+			remoteInfo = ModalAnimator;
+		};
+		81AED5321D9368E8002545E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AED50A1D9368E8002545E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81AED5111D9368E8002545E2;
+			remoteInfo = ModalAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		81AED5121D9368E8002545E2 /* ModalAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AED5151D9368E8002545E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81AED5171D9368E8002545E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81AED51C1D9368E8002545E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81AED51F1D9368E8002545E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AED5211D9368E8002545E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81AED5261D9368E8002545E2 /* ModalAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AED52A1D9368E8002545E2 /* ModalAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimatorTests.swift; sourceTree = "<group>"; };
+		81AED52C1D9368E8002545E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81AED5311D9368E8002545E2 /* ModalAnimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalAnimatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AED5351D9368E8002545E2 /* ModalAnimatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimatorUITests.swift; sourceTree = "<group>"; };
+		81AED5371D9368E8002545E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81AED5431D936F18002545E2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		81AED5451D937383002545E2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		81AED5471D93739D002545E2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		81AED5491D9373B4002545E2 /* MenuShowAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuShowAnimator.swift; sourceTree = "<group>"; };
+		81AED54E1D93B0B0002545E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81AED50F1D9368E8002545E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AED5231D9368E8002545E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AED52E1D9368E8002545E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81AED5091D9368E8002545E2 = {
+			isa = PBXGroup;
+			children = (
+				81AED5141D9368E8002545E2 /* ModalAnimator */,
+				81AED5291D9368E8002545E2 /* ModalAnimatorTests */,
+				81AED5341D9368E8002545E2 /* ModalAnimatorUITests */,
+				81AED5131D9368E8002545E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81AED5131D9368E8002545E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81AED5121D9368E8002545E2 /* ModalAnimator.app */,
+				81AED5261D9368E8002545E2 /* ModalAnimatorTests.xctest */,
+				81AED5311D9368E8002545E2 /* ModalAnimatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81AED5141D9368E8002545E2 /* ModalAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				81AED5151D9368E8002545E2 /* AppDelegate.swift */,
+				81AED5171D9368E8002545E2 /* ViewController.swift */,
+				81AED54D1D93B0B0002545E2 /* Main.storyboard */,
+				81AED51C1D9368E8002545E2 /* Assets.xcassets */,
+				81AED51E1D9368E8002545E2 /* LaunchScreen.storyboard */,
+				81AED5211D9368E8002545E2 /* Info.plist */,
+				81AED5431D936F18002545E2 /* MainTableViewCell.swift */,
+				81AED5451D937383002545E2 /* MenuTableViewController.swift */,
+				81AED5471D93739D002545E2 /* MenuTableViewCell.swift */,
+				81AED5491D9373B4002545E2 /* MenuShowAnimator.swift */,
+			);
+			path = ModalAnimator;
+			sourceTree = "<group>";
+		};
+		81AED5291D9368E8002545E2 /* ModalAnimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				81AED52A1D9368E8002545E2 /* ModalAnimatorTests.swift */,
+				81AED52C1D9368E8002545E2 /* Info.plist */,
+			);
+			path = ModalAnimatorTests;
+			sourceTree = "<group>";
+		};
+		81AED5341D9368E8002545E2 /* ModalAnimatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				81AED5351D9368E8002545E2 /* ModalAnimatorUITests.swift */,
+				81AED5371D9368E8002545E2 /* Info.plist */,
+			);
+			path = ModalAnimatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81AED5111D9368E8002545E2 /* ModalAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AED53A1D9368E8002545E2 /* Build configuration list for PBXNativeTarget "ModalAnimator" */;
+			buildPhases = (
+				81AED50E1D9368E8002545E2 /* Sources */,
+				81AED50F1D9368E8002545E2 /* Frameworks */,
+				81AED5101D9368E8002545E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalAnimator;
+			productName = ModalAnimator;
+			productReference = 81AED5121D9368E8002545E2 /* ModalAnimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81AED5251D9368E8002545E2 /* ModalAnimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AED53D1D9368E8002545E2 /* Build configuration list for PBXNativeTarget "ModalAnimatorTests" */;
+			buildPhases = (
+				81AED5221D9368E8002545E2 /* Sources */,
+				81AED5231D9368E8002545E2 /* Frameworks */,
+				81AED5241D9368E8002545E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81AED5281D9368E8002545E2 /* PBXTargetDependency */,
+			);
+			name = ModalAnimatorTests;
+			productName = ModalAnimatorTests;
+			productReference = 81AED5261D9368E8002545E2 /* ModalAnimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81AED5301D9368E8002545E2 /* ModalAnimatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AED5401D9368E8002545E2 /* Build configuration list for PBXNativeTarget "ModalAnimatorUITests" */;
+			buildPhases = (
+				81AED52D1D9368E8002545E2 /* Sources */,
+				81AED52E1D9368E8002545E2 /* Frameworks */,
+				81AED52F1D9368E8002545E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81AED5331D9368E8002545E2 /* PBXTargetDependency */,
+			);
+			name = ModalAnimatorUITests;
+			productName = ModalAnimatorUITests;
+			productReference = 81AED5311D9368E8002545E2 /* ModalAnimatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81AED50A1D9368E8002545E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ios;
+				TargetAttributes = {
+					81AED5111D9368E8002545E2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					81AED5251D9368E8002545E2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 81AED5111D9368E8002545E2;
+					};
+					81AED5301D9368E8002545E2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 81AED5111D9368E8002545E2;
+					};
+				};
+			};
+			buildConfigurationList = 81AED50D1D9368E8002545E2 /* Build configuration list for PBXProject "ModalAnimator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81AED5091D9368E8002545E2;
+			productRefGroup = 81AED5131D9368E8002545E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81AED5111D9368E8002545E2 /* ModalAnimator */,
+				81AED5251D9368E8002545E2 /* ModalAnimatorTests */,
+				81AED5301D9368E8002545E2 /* ModalAnimatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81AED5101D9368E8002545E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AED54F1D93B0B0002545E2 /* Main.storyboard in Resources */,
+				81AED5201D9368E8002545E2 /* LaunchScreen.storyboard in Resources */,
+				81AED51D1D9368E8002545E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AED5241D9368E8002545E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AED52F1D9368E8002545E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81AED50E1D9368E8002545E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AED5461D937383002545E2 /* MenuTableViewController.swift in Sources */,
+				81AED5181D9368E8002545E2 /* ViewController.swift in Sources */,
+				81AED5441D936F18002545E2 /* MainTableViewCell.swift in Sources */,
+				81AED5161D9368E8002545E2 /* AppDelegate.swift in Sources */,
+				81AED54A1D9373B4002545E2 /* MenuShowAnimator.swift in Sources */,
+				81AED5481D93739D002545E2 /* MenuTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AED5221D9368E8002545E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AED52B1D9368E8002545E2 /* ModalAnimatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AED52D1D9368E8002545E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AED5361D9368E8002545E2 /* ModalAnimatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81AED5281D9368E8002545E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81AED5111D9368E8002545E2 /* ModalAnimator */;
+			targetProxy = 81AED5271D9368E8002545E2 /* PBXContainerItemProxy */;
+		};
+		81AED5331D9368E8002545E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81AED5111D9368E8002545E2 /* ModalAnimator */;
+			targetProxy = 81AED5321D9368E8002545E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81AED51E1D9368E8002545E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81AED51F1D9368E8002545E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		81AED54D1D93B0B0002545E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81AED54E1D93B0B0002545E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81AED5381D9368E8002545E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81AED5391D9368E8002545E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81AED53B1D9368E8002545E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ModalAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.ModalAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		81AED53C1D9368E8002545E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ModalAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.ModalAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		81AED53E1D9368E8002545E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ModalAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.ModalAnimatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalAnimator.app/ModalAnimator";
+			};
+			name = Debug;
+		};
+		81AED53F1D9368E8002545E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ModalAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.ModalAnimatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalAnimator.app/ModalAnimator";
+			};
+			name = Release;
+		};
+		81AED5411D9368E8002545E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModalAnimatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.ModalAnimatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ModalAnimator;
+			};
+			name = Debug;
+		};
+		81AED5421D9368E8002545E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModalAnimatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.ModalAnimatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ModalAnimator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81AED50D1D9368E8002545E2 /* Build configuration list for PBXProject "ModalAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AED5381D9368E8002545E2 /* Debug */,
+				81AED5391D9368E8002545E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81AED53A1D9368E8002545E2 /* Build configuration list for PBXNativeTarget "ModalAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AED53B1D9368E8002545E2 /* Debug */,
+				81AED53C1D9368E8002545E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		81AED53D1D9368E8002545E2 /* Build configuration list for PBXNativeTarget "ModalAnimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AED53E1D9368E8002545E2 /* Debug */,
+				81AED53F1D9368E8002545E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		81AED5401D9368E8002545E2 /* Build configuration list for PBXNativeTarget "ModalAnimatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AED5411D9368E8002545E2 /* Debug */,
+				81AED5421D9368E8002545E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81AED50A1D9368E8002545E2 /* Project object */;
+}
