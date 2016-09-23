@@ -13,3 +13,5 @@
 13、TableViewCellAnimation<br />
 14、PickerView<br />
 15、ImageViewMask<br />
+16、ModalAnimator<br />
+17、PresentTumblrAnimator<br />
