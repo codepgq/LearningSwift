@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_DTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是根控制器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M0-lf-Zgy">
+                                <rect key="frame" x="10" y="254" width="300" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3M0-lf-Zgy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cj9-Nj-LtG"/>
+                            <constraint firstItem="3M0-lf-Zgy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hqt-Ss-ZYd"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="-519"/>
+        </scene>
+        <!--Run View Controller-->
+        <scene sceneID="BXB-5e-6WA">
+            <objects>
+                <viewController storyboardIdentifier="RunVC" id="df6-xQ-I4z" customClass="RunViewController" customModule="_DTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Vx-eH-F1C"/>
+                        <viewControllerLayoutGuide type="bottom" id="PEq-Im-Q14"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sSd-Fv-xU7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikeplues" translatesAutoresizingMaskIntoConstraints="NO" id="Rbx-He-oLi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rbx-He-oLi" firstAttribute="leading" secondItem="sSd-Fv-xU7" secondAttribute="leading" id="4fm-1n-8Fj"/>
+                            <constraint firstItem="PEq-Im-Q14" firstAttribute="top" secondItem="Rbx-He-oLi" secondAttribute="bottom" id="RX3-TB-l01"/>
+                            <constraint firstAttribute="trailing" secondItem="Rbx-He-oLi" secondAttribute="trailing" id="kC7-yK-zJ9"/>
+                            <constraint firstItem="Rbx-He-oLi" firstAttribute="top" secondItem="1Vx-eH-F1C" secondAttribute="bottom" id="sg3-al-Htw"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Is-x5-qCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="-519"/>
+        </scene>
+        <!--Wifi View Controller-->
+        <scene sceneID="4De-sB-agp">
+            <objects>
+                <viewController storyboardIdentifier="WiFiVC" id="X5I-zT-gt9" customClass="WifiViewController" customModule="_DTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kAp-iZ-Rch"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fvy-yi-sBB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ag-Ow-s7i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting" translatesAutoresizingMaskIntoConstraints="NO" id="7zC-p2-LXs">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7zC-p2-LXs" firstAttribute="top" secondItem="1Ag-Ow-s7i" secondAttribute="topMargin" id="4In-eg-1mo"/>
+                            <constraint firstItem="7zC-p2-LXs" firstAttribute="leading" secondItem="1Ag-Ow-s7i" secondAttribute="leadingMargin" constant="-20" id="IXc-OF-fBo"/>
+                            <constraint firstItem="Fvy-yi-sBB" firstAttribute="top" secondItem="7zC-p2-LXs" secondAttribute="bottom" id="JW3-p9-09e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7zC-p2-LXs" secondAttribute="trailing" constant="-20" id="TGg-Ir-x8O"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nl0-Np-LdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="-519"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="ChZ-6v-5Tg">
+            <objects>
+                <viewController storyboardIdentifier="ScanVC" id="t5W-Lr-Yki" customClass="ScanViewController" customModule="_DTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dmF-u4-vJI"/>
+                        <viewControllerLayoutGuide type="bottom" id="xaZ-kO-Ito"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2G0-fl-9V2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wechat" translatesAutoresizingMaskIntoConstraints="NO" id="dcR-8i-2y8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dcR-8i-2y8" secondAttribute="trailing" id="6dB-gR-lDK"/>
+                            <constraint firstItem="dcR-8i-2y8" firstAttribute="leading" secondItem="2G0-fl-9V2" secondAttribute="leading" id="W0b-eX-ngG"/>
+                            <constraint firstAttribute="bottom" secondItem="dcR-8i-2y8" secondAttribute="bottom" id="X2g-Pj-wn0"/>
+                            <constraint firstItem="dcR-8i-2y8" firstAttribute="top" secondItem="dmF-u4-vJI" secondAttribute="bottom" id="ZE7-wp-LJp"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztw-A2-9d4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="-519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nikeplues" width="375" height="667"/>
+        <image name="setting" width="375" height="667"/>
+        <image name="wechat" width="375" height="667"/>
+    </resources>
+</document>
